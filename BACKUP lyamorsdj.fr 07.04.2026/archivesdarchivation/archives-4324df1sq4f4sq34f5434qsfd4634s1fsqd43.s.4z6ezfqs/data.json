@@ -1,0 +1,62 @@
+{
+  "site": {
+    "name": "Lyamors DJ",
+    "tagline": "Association musicale solidaire et événementielle",
+    "city": "Bidart • Pays Basque",
+    "email": "contact@lyamorsdj.fr",
+    "phone": "+33 6 00 00 00 00",
+    "instagram": "https://instagram.com/asso.lyamorsdj",
+    "tiktok": "https://tiktok.com/@lyamorsdj",
+    "youtube": "https://youtube.com/"
+  },
+  "hero": {
+    "eyebrow": "Association déclarée • Musique • Solidarité",
+    "title": "La musique devient une présence utile, élégante et fédératrice.",
+    "text": "Lyamors DJ imagine des événements, des actions locales et des expériences musicales qui créent du lien. L'association réunit énergie artistique, engagement humain et présence terrain dans un univers premium et contemporain.",
+    "button_primary": "Découvrir l'association",
+    "button_secondary": "Nous contacter"
+  },
+  "about": {
+    "title": "Une identité associative forte, pensée pour durer.",
+    "text": "Lyamors DJ porte une vision moderne de l'engagement associatif. À travers la musique, l'animation et l'événementiel, l'association soutient des initiatives utiles, valorise le territoire local et développe des projets à impact positif. Le site met en avant une image sérieuse, artistique et professionnelle, sans tomber dans les codes artificiels ou impersonnels."
+  },
+  "services": [
+    {
+      "title": "Événements solidaires",
+      "text": "Organisation de DJ sets, animations et rendez-vous musicaux à vocation sociale, caritative ou territoriale."
+    },
+    {
+      "title": "Actions locales",
+      "text": "Présence aux côtés d'acteurs locaux, associations, structures et projets qui ont besoin d'un relais culturel ou événementiel."
+    },
+    {
+      "title": "Image & sensibilisation",
+      "text": "Communication, valorisation de causes et création d'expériences qui donnent de la visibilité à des engagements utiles."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-04-12",
+      "title": "Afterwork associatif",
+      "place": "Bidart",
+      "text": "Une soirée musicale au profit d'un projet local avec ambiance élégante et programmation ouverte."
+    },
+    {
+      "date": "2026-05-08",
+      "title": "Set solidaire en plein air",
+      "place": "Biarritz",
+      "text": "Un moment fédérateur en extérieur pour créer du lien et soutenir une action utile au territoire."
+    },
+    {
+      "date": "2026-06-21",
+      "title": "Scène spéciale Fête de la Musique",
+      "place": "Côte Basque",
+      "text": "Une présence musicale marquante avec mise en avant de l'identité de l'association."
+    }
+  ],
+  "contact": {
+    "title": "Parlons de votre projet",
+    "text": "Partenariat, demande d'information, proposition d'événement, bénévolat ou action locale : Lyamors DJ répond avec une approche professionnelle et humaine.",
+    "address": "Bidart, Pyrénées-Atlantiques"
+  }
+}

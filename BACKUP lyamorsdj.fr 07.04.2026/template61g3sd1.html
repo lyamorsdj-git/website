@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message - LYAMORS DJ</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f1eb;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #0a0a0b 0%, #111115 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        .header .icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+        .brand {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .label {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #e8353a;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        .value {
+            font-size: 16px;
+            color: #333;
+            padding: 12px;
+            background: #f9f9f9;
+            border-left: 3px solid #e8353a;
+            border-radius: 4px;
+            margin-bottom: 16px;
+        }
+        .message-box {
+            background: #f5f1eb;
+            border: 1px solid #e8e4dc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 12px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+        .meta-info {
+            font-size: 12px;
+            color: #888;
+            margin-top: 8px;
+            font-style: italic;
+        }
+        .action-buttons {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta {
+            display: inline-block;
+            background: #e8353a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+        .footer {
+            background: #111115;
+            color: #e8e4dc;
+            padding: 24px 30px;
+            text-align: center;
+            font-size: 12px;
+            border-top: 1px solid #16161a;
+        }
+        .footer a {
+            color: #e8353a;
+            text-decoration: none;
+        }
+        .footer-links {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        @media (max-width: 600px) {
+            .content, .header, .footer {
+                padding: 24px 20px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .value {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header">
+            <div class="icon"><?php echo $icon ?? '✉️'; ?></div>
+            <h1><?php echo $title ?? 'Nouveau message'; ?></h1>
+            <p style="margin: 8px 0 0 0; opacity: 0.9;"><?php echo $subtitle ?? 'via le formulaire de contact'; ?></p>
+            <div class="brand">LYAMORS DJ</div>
+        </div>
+
+        <!-- CONTENU -->
+        <div class="content">
+            <?php if (!empty($prenom)): ?>
+            <div class="section">
+                <div class="label">Prénom & Nom</div>
+                <div class="value"><?php echo htmlspecialchars($prenom) . ' ' . htmlspecialchars($nom); ?></div>
+            </div>
+            <?php endif; ?>
+
+            <?php if (!empty($email)): ?>
+            <div class="section">
+                <div class="label">Email</div>
+                <div class="value">
+                    <a href="mailto:<?php echo htmlspecialchars($email); ?>" style="color: #e8353a; text-decoration: none;">
+                        <?php echo htmlspecialchars($email); ?>
+                    </a>
+                </div>
+            </div>
+            <?php endif; ?>
+
+            <?php if (!empty($telephone)): ?>
+            <div class="section">
+                <div class="label">Téléphone</div>
+                <div class="value">
+                    <a href="tel:<?php echo htmlspecialchars($telephone); ?>" style="color: #e8353a; text-decoration: none;">
+                        <?php echo htmlspecialchars($telephone); ?>
+                    </a>
+                </div>
+            </div>
+            <?php endif; ?>
+
+            <?php if (!empty($sujet)): ?>
+            <div class="section">
+                <div class="label">Sujet</div>
+                <div class="value"><?php echo htmlspecialchars($sujet); ?></div>
+            </div>
+            <?php endif; ?>
+
+            <?php if (!empty($message)): ?>
+            <div class="section">
+                <div class="label">Message</div>
+                <div class="message-box"><?php echo htmlspecialchars($message); ?></div>
+                <div class="meta-info">
+                    <?php if (!empty($date)): ?>
+                        Message reçu le <?php echo htmlspecialchars($date); ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php endif; ?>
+
+            <?php if (!empty($action_url) && !empty($action_text)): ?>
+            <div class="action-buttons">
+                <a href="<?php echo htmlspecialchars($action_url); ?>" class="cta">
+                    <?php echo htmlspecialchars($action_text); ?>
+                </a>
+            </div>
+            <?php endif; ?>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p style="margin: 0;">
+                © <?php echo date('Y'); ?> Association LYAMORS DJ • RNA W641015062
+            </p>
+            <div class="footer-links">
+                <a href="https://www.lyamorsdj.fr">Visiter le site</a>
+                <a href="https://www.lyamorsdj.fr/mentions-legales.php">Mentions légales</a>
+                <a href="https://www.lyamorsdj.fr/politique-confidentialite.php">Confidentialité</a>
+            </div>
+            <p style="margin: 12px 0 0 0; font-size: 11px; opacity: 0.7;">
+                Cet email a été généré automatiquement. Ne pas répondre directement.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

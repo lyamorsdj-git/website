@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <title>Lyamors DJ — Association musicale, événements & projets locaux</title>
+  <meta name="description" content="Lyamors DJ est une association musicale engagée dans l'accompagnement d'événements, de projets locaux et d'initiatives collectives avec sérieux, accessibilité et professionnalisme.">
+  <meta name="keywords" content="Lyamors DJ, association musicale, association musique, événement musical, projets musicaux, animation musicale, association événementielle, initiatives locales, accompagnement événementiel, musique pour tous, association culturelle, Bayonne, Pays Basque">
+  <meta name="author" content="Lyamors DJ">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#1d56d8">
+  <meta name="format-detection" content="telephone=yes, email=yes, address=yes">
+  <meta name="color-scheme" content="light dark">
+
+  <link rel="canonical" href="https://www.lyamorsdj.fr/">
+
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lyamors DJ">
+  <meta property="og:title" content="Lyamors DJ — Association musicale, événements & projets locaux">
+  <meta property="og:description" content="Une association musicale engagée pour accompagner événements, projets et initiatives locales avec une approche sérieuse, humaine et professionnelle.">
+  <meta property="og:url" content="https://www.lyamorsdj.fr/">
+  <meta property="og:image" content="https://www.lyamorsdj.fr/favicon.png">
+  <meta property="og:image:alt" content="Logo de l'association Lyamors DJ">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lyamors DJ — Association musicale, événements & projets locaux">
+  <meta name="twitter:description" content="Association musicale engagée dans l'accompagnement d'événements, de projets et d'initiatives locales.">
+  <meta name="twitter:image" content="https://www.lyamorsdj.fr/favicon.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Lyamors DJ",
+    "url": "https://www.lyamorsdj.fr/",
+    "logo": "https://www.lyamorsdj.fr/favicon.png",
+    "email": "contact@lyamorsdj.fr",
+    "telephone": "+33564116245",
+    "description": "Association musicale engagée dans l'accompagnement d'événements, de projets locaux et d'initiatives collectives.",
+    "sameAs": [
+      "https://www.lyamorsdj.fr/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --blue:       #1d56d8;
+      --blue-dark:  #1540b0;
+      --blue-light: #e8effd;
+      --blue-mid:   #c5d7fa;
+      --text:       #0f1923;
+      --text-2:     #3d4d60;
+      --text-3:     #6b7a8f;
+      --border:     #dde3eb;
+      --bg:         #ffffff;
+      --bg-2:       #f5f7fa;
+      --green:      #12a05c;
+      --green-bg:   #e6f7ef;
+      --shadow-sm:  0 1px 4px rgba(15,25,35,.07);
+      --shadow-md:  0 4px 20px rgba(15,25,35,.09);
+      --r: 12px;
+      --max: 1160px;
+      --font: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --blue:       #6b9cff;
+        --blue-dark:  #3e73df;
+        --blue-light: #162338;
+        --blue-mid:   #29466d;
+        --text:       #eef4ff;
+        --text-2:     #c8d4e8;
+        --text-3:     #93a5bf;
+        --border:     #243247;
+        --bg:         #0b1220;
+        --bg-2:       #101a2b;
+        --green:      #49d18e;
+        --green-bg:   #10271d;
+        --shadow-sm:  0 1px 4px rgba(0,0,0,.28);
+        --shadow-md:  0 8px 28px rgba(0,0,0,.35);
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    img { display: block; max-width: 100%; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrap { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+
+    .topbar {
+  background: #b91c1c;
+  color: rgba(255,255,255,.92);
+  font-size: .82rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(255,255,255,.14);
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 8px 0;
+}
+
+.topbar-items {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.topbar-warning {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.topbar-warning svg {
+  flex-shrink: 0;
+}
+
+.topbar a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.topbar a:hover {
+  text-decoration: underline;
+}
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: color-mix(in srgb, var(--bg) 92%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-wrap { display: flex; align-items: center; justify-content: space-between; min-height: 68px; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg-2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .brand-logo img,
+    .footer-logo img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 5px;
+      filter: none !important;
+      mix-blend-mode: normal;
+    }
+
+    .brand-logo .lfb { font-weight: 800; font-size: 1.1rem; color: var(--blue); }
+    .brand-name strong { display: block; font-size: .97rem; font-weight: 700; color: var(--text); line-height: 1.2; }
+    .brand-name span { font-size: .75rem; color: var(--text-3); font-weight: 500; }
+    .nav-links { display: flex; align-items: center; gap: 2px; }
+    .nav-links a { font-size: .9rem; font-weight: 600; color: var(--text-2); padding: 8px 14px; border-radius: 8px; transition: color .15s, background .15s; }
+    .nav-links a:hover { color: var(--blue); background: var(--blue-light); text-decoration: none; }
+    .btn { display: inline-flex; align-items: center; gap: 7px; font-family: var(--font); font-weight: 700; font-size: .88rem; border-radius: var(--r); padding: 10px 20px; cursor: pointer; transition: all .18s; border: none; white-space: nowrap; text-decoration: none !important; }
+    .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 2px 8px rgba(29,86,216,.3); }
+    .btn-primary:hover { background: var(--blue-dark); box-shadow: 0 4px 16px rgba(29,86,216,.4); transform: translateY(-1px); }
+    .btn-outline { background: transparent; color: var(--blue); border: 2px solid var(--blue); }
+    .btn-outline:hover { background: var(--blue-light); }
+    .btn-white { background: #fff; color: var(--blue); box-shadow: 0 2px 12px rgba(0,0,0,.15); }
+    .btn-white:hover { background: var(--blue-light); transform: translateY(-1px); }
+    .hamburger { display: none; background: none; border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; cursor: pointer; flex-direction: column; gap: 4px; }
+    .hamburger span { display: block; width: 20px; height: 2px; background: var(--text); border-radius: 2px; }
+    .nav-mobile { display: none; flex-direction: column; padding: 12px 0 16px; border-top: 1px solid var(--border); gap: 2px; }
+    .nav-mobile.open { display: flex; }
+    .nav-mobile a { font-size: .95rem; font-weight: 600; color: var(--text-2); padding: 11px 16px; border-radius: 8px; transition: color .15s, background .15s; }
+    .nav-mobile a:hover { color: var(--blue); background: var(--blue-light); text-decoration: none; }
+    .nav-mobile .btn-primary { margin: 8px 0 0; justify-content: center; }
+
+    .hero { background: linear-gradient(145deg, #0c2868 0%, #1d56d8 55%, #2b6be8 100%); color: #fff; padding: 80px 0 72px; position: relative; overflow: hidden; }
+    .hero::after { content: ''; position: absolute; right: -100px; bottom: -120px; width: 500px; height: 500px; border-radius: 50%; background: rgba(255,255,255,.04); pointer-events: none; }
+    .hero::before { content: ''; position: absolute; right: 180px; top: -80px; width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,.03); pointer-events: none; }
+    .hero-inner { display: grid; grid-template-columns: 1fr 370px; gap: 56px; align-items: center; position: relative; z-index: 1; }
+    .hero-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.2); border-radius: 999px; padding: 5px 14px 5px 9px; font-size: .8rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; margin-bottom: 20px; }
+    .dot-pulse { width: 8px; height: 8px; border-radius: 50%; background: #5dddaa; box-shadow: 0 0 0 3px rgba(93,221,170,.25); animation: dpulse 2s infinite; }
+    @keyframes dpulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+    .hero h1 { font-size: clamp(2rem, 4.5vw, 3.5rem); font-weight: 800; line-height: 1.1; letter-spacing: -.025em; margin-bottom: 18px; }
+    .hero h1 span { opacity: .7; font-weight: 400; }
+    .hero-desc { font-size: 1.05rem; line-height: 1.75; color: rgba(255,255,255,.82); font-weight: 300; max-width: 500px; margin-bottom: 32px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 40px; }
+    .hero-trust { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .hero-trust-item { display: flex; align-items: center; gap: 8px; font-size: .83rem; color: rgba(255,255,255,.75); font-weight: 500; }
+
+    .hero-card { background: var(--bg); border-radius: 16px; padding: 28px; box-shadow: 0 20px 60px rgba(0,0,0,.18); color: var(--text); border: 1px solid var(--border); }
+    .hc-title { font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--text-3); margin-bottom: 16px; }
+    .hc-rows { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+    .hc-row { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 10px; background: var(--bg-2); border: 1px solid var(--border); transition: border-color .2s; text-decoration: none !important; color: var(--text); }
+    .hc-row:hover { border-color: var(--blue-mid); }
+    .hc-icon { width: 36px; height: 36px; border-radius: 8px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--blue); }
+    .hc-text strong { display: block; font-size: .88rem; font-weight: 700; color: var(--text); }
+    .hc-text span { font-size: .75rem; color: var(--text-3); }
+    .hc-divider { height: 1px; background: var(--border); margin: 16px 0; }
+    .hc-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .hc-tag { padding: 4px 11px; background: var(--blue-light); color: var(--blue); border-radius: 999px; font-size: .76rem; font-weight: 600; }
+
+    .trust-bar { background: var(--bg-2); border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .trust-inner { display: flex; align-items: center; justify-content: center; gap: 36px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 9px; font-size: .85rem; font-weight: 600; color: var(--text-2); }
+    .trust-icon { width: 32px; height: 32px; border-radius: 8px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; color: var(--blue); flex-shrink: 0; }
+
+    .section { padding: 80px 0; }
+    .section-alt { background: var(--bg-2); }
+    .section-tag { display: inline-block; font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--blue); background: var(--blue-light); padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; }
+    h2.section-title { font-size: clamp(1.7rem, 3.2vw, 2.5rem); font-weight: 800; letter-spacing: -.025em; line-height: 1.15; color: var(--text); margin-bottom: 12px; }
+    .section-sub { font-size: 1rem; color: var(--text-3); font-weight: 400; max-width: 540px; line-height: 1.75; }
+    .section-head { margin-bottom: 48px; }
+    .section-head.center { text-align: center; }
+    .section-head.center .section-sub { margin: 0 auto; }
+
+    .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r); padding: 28px 26px; box-shadow: var(--shadow-sm); transition: box-shadow .2s, transform .2s, border-color .2s; }
+    .card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--blue-mid); }
+    .card-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; color: var(--blue); margin-bottom: 18px; }
+    .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+    .card p { font-size: .9rem; color: var(--text-3); line-height: 1.7; }
+    .card-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 16px; font-size: .85rem; font-weight: 700; color: var(--blue); }
+    .card-link:hover { text-decoration: underline; }
+
+    .split-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .split-visual { background: linear-gradient(135deg, var(--blue-light), #dce8fd); border-radius: 16px; padding: 36px; border: 1px solid var(--blue-mid); position: relative; overflow: hidden; }
+    .split-visual::before { content: ''; position: absolute; bottom: -30px; right: -30px; width: 150px; height: 150px; border-radius: 50%; background: rgba(29,86,216,.08); }
+    .sv-big { font-size: 3rem; font-weight: 800; letter-spacing: -.04em; color: var(--blue); line-height: 1; margin-bottom: 4px; }
+    .sv-sub { font-size: .78rem; font-weight: 600; color: var(--text-3); margin-bottom: 24px; text-transform: uppercase; letter-spacing: .06em; }
+    .sv-rows { display: flex; flex-direction: column; }
+    .sv-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid rgba(29,86,216,.12); font-size: .9rem; gap: 16px; }
+    .sv-row:last-child { border-bottom: none; }
+    .sv-row-k { color: var(--text-2); font-weight: 500; }
+    .sv-row-v { font-weight: 700; color: var(--text); text-align: right; }
+    .badge-g { display: inline-flex; align-items: center; gap: 5px; background: var(--green-bg); color: var(--green); font-size: .78rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; }
+    .badge-g::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+    .checklist { display: flex; flex-direction: column; gap: 14px; margin: 24px 0; }
+    .check-item { display: flex; align-items: flex-start; gap: 14px; }
+    .check-ico { width: 22px; height: 22px; border-radius: 50%; background: var(--blue-light); display: flex; align-items: center; justify-content: center; color: var(--blue); flex-shrink: 0; margin-top: 2px; }
+
+    .stats-strip { background: linear-gradient(135deg, #0c2868, #1d56d8); color: #fff; padding: 56px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .stat-item { text-align: center; padding: 16px 24px; border-right: 1px solid rgba(255,255,255,.1); }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-size: 2.4rem; font-weight: 800; letter-spacing: -.04em; margin-bottom: 6px; line-height: 1; }
+    .stat-label { font-size: .85rem; color: rgba(255,255,255,.7); }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .proj-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; box-shadow: var(--shadow-sm); transition: box-shadow .2s, transform .2s; }
+    .proj-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+    .proj-top { padding: 24px; }
+    .proj-num { font-size: .74rem; font-weight: 700; color: var(--blue); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 10px; }
+    .proj-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+    .proj-card p { font-size: .88rem; color: var(--text-3); line-height: 1.7; }
+    .proj-foot { padding: 13px 24px; background: var(--bg-2); border-top: 1px solid var(--border); }
+    .proj-tag { font-size: .76rem; font-weight: 700; color: var(--blue); background: var(--blue-light); padding: 3px 10px; border-radius: 999px; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: start; }
+    .contact-info { display: flex; flex-direction: column; gap: 14px; }
+    .contact-card { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r); padding: 22px; display: flex; gap: 16px; align-items: flex-start; box-shadow: var(--shadow-sm); transition: border-color .2s; }
+    .contact-card:hover { border-color: var(--blue-mid); }
+    .cc-icon { width: 44px; height: 44px; border-radius: 10px; background: var(--blue-light); display: flex; align-items: center; justify-content: center; color: var(--blue); flex-shrink: 0; }
+    .cc-body h4 { font-size: .76rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--text-3); margin-bottom: 5px; }
+    .cc-body p { font-size: .95rem; color: var(--text); font-weight: 500; }
+    .contact-note { padding: 16px 20px; background: var(--blue-light); border-left: 3px solid var(--blue); border-radius: 0 10px 10px 0; font-size: .88rem; color: var(--text-2); line-height: 1.65; }
+
+    .site-footer { background: #0c1929; color: #fff; padding: 60px 0 0; }
+    .footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 48px; }
+    .footer-brand { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }
+    .footer-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 9px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .footer-logo .lfb { font-weight: 800; font-size: .9rem; color: #fff; }
+    .footer-brand strong { font-size: .95rem; font-weight: 700; }
+    .footer-about { font-size: .87rem; color: rgba(255,255,255,.5); line-height: 1.7; font-weight: 300; margin-bottom: 18px; }
+    .footer-col h4 { font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.38); margin-bottom: 14px; }
+    .footer-links { display: flex; flex-direction: column; gap: 10px; }
+    .footer-links a { font-size: .88rem; color: rgba(255,255,255,.58); transition: color .15s; }
+    .footer-links a:hover { color: #fff; text-decoration: none; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding: 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .footer-bottom p { font-size: .8rem; color: rgba(255,255,255,.33); }
+    .footer-bottom-links { display: flex; gap: 20px; }
+    .footer-bottom-links a { font-size: .8rem; color: rgba(255,255,255,.38); }
+    .footer-bottom-links a:hover { color: rgba(255,255,255,.65); text-decoration: none; }
+
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .55s ease, transform .55s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .rd1 { transition-delay: .1s; }
+    .rd2 { transition-delay: .2s; }
+    .rd3 { transition-delay: .3s; }
+
+    @media (max-width: 1024px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { max-width: 460px; }
+      .split-2 { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      .cards-3, .projects-grid { grid-template-columns: 1fr 1fr; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,.1); padding: 20px; }
+      .stat-item:last-child { border-bottom: none; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .section { padding: 56px 0; }
+      .hero { padding: 56px 0 52px; }
+      .trust-inner { gap: 20px; justify-content: flex-start; }
+    }
+
+    @media (max-width: 540px) {
+      .cards-3, .projects-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; align-items: flex-start; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .topbar-item:not(:first-child) { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+<div class="wrap topbar-inner">
+  <div class="topbar-items"> 
+ <!--      <div class="topbar-warning"> -->
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+  <path d="M12 9v4"/>
+</svg>
+        <span>Le site web vas subir quelques petites perturbations prochainement. Nous ne vendons également pas de t-shirt.</span>
+<!-- </div> -->
+    </div>
+    <a href="#contact">Prendre contact →</a>
+</div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="nav-wrap">
+      <a href="#" class="brand" style="text-decoration:none">
+        <div class="brand-logo">
+          <img src="./favicon.png" alt="Logo Lyamors DJ"
+               loading="eager"
+               decoding="async"
+               onerror="this.remove(); this.parentNode.innerHTML='<span class=&quot;lfb&quot; aria-label=&quot;Lyamors DJ&quot;>L</span>'">
+        </div>
+        <div class="brand-name">
+          <strong>Lyamors DJ</strong>
+          <span>Association musicale</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#actions">Nos actions</a>
+        <a href="#association">L'association</a>
+        <a href="#projets">Projets</a>
+        <a href="https://espace.lyamorsdj.fr">Espace membre</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary">Nous contacter</a>
+      </div>
+
+      <button class="hamburger" onclick="document.getElementById('mob-nav').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav id="mob-nav" class="nav-mobile">
+      <a href="#actions" onclick="this.closest('.nav-mobile').classList.remove('open')">Nos actions</a>
+      <a href="#association" onclick="this.closest('.nav-mobile').classList.remove('open')">L'association</a>
+      <a href="#projets" onclick="this.closest('.nav-mobile').classList.remove('open')">Projets</a>
+      <a href="#contact" class="btn btn-primary" onclick="this.closest('.nav-mobile').classList.remove('open')">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-label"><span class="dot-pulse"></span>Association active</div>
+        <h1>La musique<br><span>pour tous.</span></h1>
+        <p class="hero-desc">Lyamors DJ est une association qui lutte pour l'inclusion sociale au travers de la musique</p>
+        <div class="hero-actions">
+          <a href="#actions" class="btn btn-white">Découvrir nos actions</a>
+          <a href="tel:+33564116245" class="btn btn-outline" style="border-color:rgba(255,255,255,.4);color:#fff;">Nous contacter</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Présence adaptée à chaque contexte
+          </div>
+          <div class="hero-trust-item">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Contact direct et rapide
+          </div>
+          <div class="hero-trust-item">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Image professionnelle
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hc-title">Accès rapide</div>
+        <div class="hc-rows">
+          <a href="mailto:contact@lyamorsdj.fr" class="hc-row">
+            <div class="hc-icon"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+            <div class="hc-text"><strong>contact@lyamorsdj.fr</strong><span>Réponse sous 48h</span></div>
+          </a>
+          <a href="tel:+33564116245" class="hc-row">
+            <div class="hc-icon"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
+            <div class="hc-text"><strong>05 64 11 62 45</strong><span>Notre ligne téléphonique</span></div>
+          </a>
+        </div>
+        <div class="hc-divider"></div>
+        <div class="hc-tags">
+          <span class="hc-tag">Événements</span>
+          <span class="hc-tag">Projets musicaux</span>
+          <span class="hc-tag">Associatif</span>
+          <span class="hc-tag">Local</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-bar">
+  <div class="wrap">
+    <div class="trust-inner">
+      <div class="trust-item"><div class="trust-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>Sérieux et professionnel</div>
+      <div class="trust-item"><div class="trust-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg></div>Association humaine</div>
+      <div class="trust-item"><div class="trust-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19V6l12-3v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="15" r="3"/></svg></div>Musique & événements</div>
+      <div class="trust-item"><div class="trust-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>Contact direct</div>
+      <div class="trust-item"><div class="trust-icon"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>Image crédible</div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="actions">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="section-tag">Nos actions</span>
+      <h2 class="section-title">Ce que nous proposons</h2>
+      <p class="section-sub">Des services clairs et adaptés pour accompagner vos projets musicaux et événementiels.</p>
+    </div>
+    <div class="cards-3">
+      <div class="card reveal rd1">
+        <div class="card-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 19V6l12-3v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="15" r="3"/></svg></div>
+        <h3>Découvrir</h3>
+        <p>Présenter l'association, son rôle et sa mission de façon claire et accessible pour tout public ou structure.</p>
+        <a href="#association" class="card-link">En savoir plus →</a>
+      </div>
+      <div class="card reveal rd2">
+        <div class="card-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+        <h3>Accompagner</h3>
+        <p>Analyser vos besoins liés à un événement ou un projet musical et proposer une réponse adaptée à votre contexte.</p>
+        <a href="#contact" class="card-link">Nous contacter →</a>
+      </div>
+      <div class="card reveal rd3">
+        <div class="card-icon"><svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg></div>
+        <h3>Orienter</h3>
+        <p>Mettre en avant les bons interlocuteurs et les informations utiles pour avancer rapidement dans votre projet.</p>
+        <a href="#contact" class="card-link">Nous contacter →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-strip">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat-item reveal"><div class="stat-num">100%</div><div class="stat-label">Gratuite et accessible</div></div>
+      <div class="stat-item reveal rd1"><div class="stat-num">48h</div><div class="stat-label">Délai de réponse garanti à votre demande</div></div>
+      <div class="stat-item reveal rd2"><div class="stat-num">Pro</div><div class="stat-label">Image sérieuse et crédible pour vos événements</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="section section-alt" id="association">
+  <div class="wrap">
+    <div class="split-2">
+      <div class="reveal">
+        <span class="section-tag">L'association</span>
+        <h2 class="section-title">Un cadre humain et professionnel</h2>
+        <p style="font-size:.95rem;color:var(--text-3);line-height:1.75;margin-bottom:8px;">Lyamors DJ est une association musicale engagée dans l'accompagnement d'événements, la valorisation de projets locaux et la mise en œuvre d'initiatives collectives.</p>
+        <p style="font-size:.95rem;color:var(--text-3);line-height:1.75;">Fondée avec l'ambition de proposer une présence musicale sérieuse et accessible, l'association s'adapte à chaque contexte, qu'il soit associatif, culturel ou communautaire.</p>
+        <div class="checklist">
+          <div class="check-item"><div class="check-ico"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Écoute attentive des besoins du public ou de la structure</p></div>
+          <div class="check-item"><div class="check-ico"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Accompagnement musical adapté au contexte et au public</p></div>
+          <div class="check-item"><div class="check-ico"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div><p>Présence sérieuse, lisible et cohérente avec votre image</p></div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Prendre contact</a>
+      </div>
+
+      <div class="split-visual reveal rd2">
+        <div class="sv-big">Lyamors<br>DJ</div>
+        <div class="sv-sub">Fiche association</div>
+        <div class="sv-rows">
+          <div class="sv-row"><span class="sv-row-k">Type</span><span class="sv-row-v">Association musicale</span></div>
+          <div class="sv-row"><span class="sv-row-k">Statut</span><span class="sv-row-v"><span class="badge-g">Active</span></span></div>
+          <div class="sv-row"><span class="sv-row-k">Domaine associatif</span><span class="sv-row-v">Musique, Événements & Action Sociale</span></div>
+          <div class="sv-row"><span class="sv-row-k">Email</span><span class="sv-row-v"><a href="mailto:contact@lyamorsdj.fr" style="font-size:.84rem;">contact@lyamorsdj.fr</a></span></div>
+          <div class="sv-row"><span class="sv-row-k">Chat en ligne (bientôt)</span><span class="sv-row-v"><a href="https://www.lyamorsdj.fr/" style="font-size:.84rem;">contact.lyamorsdj.fr</a></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projets">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="section-tag">Projets</span>
+      <h2 class="section-title">Accompagnement & initiatives</h2>
+      <p class="section-sub">Une présence musicale adaptée pour chaque type d'événement ou de projet.</p>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card reveal rd1">
+        <div class="proj-top"><div class="proj-num">01 — Événementiel</div><h3>Événements associatifs</h3><p>Accompagnement musical pour temps forts, rendez-vous internes et actions locales de toute nature et envergure.</p></div>
+        <div class="proj-foot"><span class="proj-tag">Associatif</span></div>
+      </div>
+      <div class="proj-card reveal rd2">
+        <div class="proj-top"><div class="proj-num">02 — Local</div><h3>Initiatives locales</h3><p>Valorisation de projets collectifs, mise en ambiance sonore et soutien à des démarches communautaires.</p></div>
+        <div class="proj-foot"><span class="proj-tag">Communautaire</span></div>
+      </div>
+      <div class="proj-card reveal rd3">
+        <div class="proj-top"><div class="proj-num">03 — Sur mesure</div><h3>Présence adaptée</h3><p>Une approche cohérente avec le cadre, le public cible et l'image souhaitée par les organisateurs.</p></div>
+        <div class="proj-foot"><span class="proj-tag">Sur mesure</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Travaillons ensemble</h2>
+      <p class="section-sub">Pour un événement, une demande d'information ou un projet, l'association est accessible directement et rapidement.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal" style="grid-column: 1 / -1;">
+        <div class="contact-card">
+          <div class="cc-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+          <div class="cc-body"><h4>Email</h4><p><a href="mailto:contact@lyamorsdj.fr">contact@lyamorsdj.fr</a></p></div>
+        </div>
+
+        <div class="contact-card">
+          <div class="cc-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+            </svg>
+          </div>
+          <div class="cc-body"><h4>Contact Téléphonique</h4><p><a href="tel:+33564116245">05 64 11 62 45</a></p></div>
+        </div>
+
+        <div class="contact-card">
+          <div class="cc-icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg></div>
+          <div class="cc-body"><h4>Type de demande</h4><p>Événement, projet, information ou prise de contact associative.</p></div>
+        </div>
+
+        <div class="contact-note">Toutes les demandes sont lues et traitées avec soin. Précisez votre contexte pour faciliter la réponse — nous nous adaptons à chaque situation.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="./favicon.png" alt="Logo Lyamors DJ"
+                 loading="lazy"
+                 decoding="async"
+                 onerror="this.remove(); this.parentNode.innerHTML='<span class=&quot;lfb&quot; aria-label=&quot;Lyamors DJ&quot;>L</span>'">
+          </div>
+          <strong>Lyamors DJ</strong>
+        </div>
+        <p class="footer-about">Association musicale engagée dans l'accompagnement d'événements, de projets et d'initiatives culturelles et locales avec sérieux et professionnalisme.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <div class="footer-links">
+          <a href="#actions">Nos actions</a>
+          <a href="#association">L'association</a>
+          <a href="#projets">Projets</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <div class="footer-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-links">
+          <a href="mailto:contact@lyamorsdj.fr">contact@lyamorsdj.fr</a>
+          <a href="https://www.lyamorsdj.fr/" target="_blank">www.lyamorsdj.fr</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Lyamors DJ — Tous droits réservés.</p>
+      <div class="footer-bottom-links">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
